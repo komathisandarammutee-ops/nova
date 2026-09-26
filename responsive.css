@@ -20,6 +20,11 @@
 
 /* A small bounce from the dolls just after the camera flashes. */
 .hero-dolls{position:absolute;inset:0;z-index:1;pointer-events:none;background-image:url("https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-03_01_35-PM.png");background-position:center;background-size:cover;clip-path:polygon(67% 35%,70% 30%,73% 32%,75% 39%,78% 37%,81% 39%,83% 48%,83% 70%,66% 70%,66% 48%);animation:dollsBounce 5s ease-in-out infinite}
-@keyframes dollsBounce{0%,63%,77%,100%{transform:translateY(0)}67%,73%{transform:translateY(-6px)}70%{transform:translateY(0)}}
+@keyframes dollsBounce{0%,63%,80%,100%{transform:translateY(0)}67%,74%{transform:translateY(-16px)}71%{transform:translateY(0)}}
 @media(max-width:699px){.hero-dolls{background-image:url("hero-mobile.jpg");background-size:100% 100%;clip-path:polygon(41% 42%,43% 37%,48% 35%,53% 37%,56% 42%,60% 38%,66% 37%,72% 42%,72% 57%,41% 57%)}}
 @media(prefers-reduced-motion:reduce){.hero-dolls{animation:none!important}}
+
+.doll-sparkles{position:absolute;z-index:3;left:79%;top:35%;pointer-events:none;color:#fff7ad;font-size:42px;line-height:1;text-shadow:0 0 8px #fff,0 0 22px #ffd56b;opacity:0;animation:sparklePop 5s ease-out infinite}
+@keyframes sparklePop{0%,63%,78%,100%{opacity:0;transform:translateY(8px) scale(.3)}67%,73%{opacity:1;transform:translateY(-12px) scale(1.35)}}
+@media(max-width:699px){.doll-sparkles{left:70%;top:38%;font-size:36px}}
+@media(prefers-reduced-motion:reduce){.doll-sparkles{animation:none!important}}
