@@ -4,7 +4,7 @@
 /* Gentle image motion */
 @keyframes heroReveal{from{opacity:0}to{opacity:1}}
 @keyframes gentleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-.hero-image img{animation:heroReveal .7s ease-out both,gentleFloat 5s ease-in-out .7s infinite}
+.hero-image img{animation:heroReveal .7s ease-out both}
 .promo img,.feature img{animation:gentleFloat 6s ease-in-out infinite}
 .promo:nth-child(even) img{animation-delay:-3s}
 .category img,.promo img,.product img,.feature img{transition:transform .25s ease,box-shadow .25s ease}
@@ -17,3 +17,9 @@
 @keyframes cameraFlash{0%,55%,57%,65%,100%{opacity:0;transform:translate(-50%,-50%) scale(.25)}58%,62%{opacity:1;transform:translate(-50%,-50%) scale(1.2)}}
 @media(max-width:699px){.camera-flash{left:61%;top:65%;width:125px}}
 @media(prefers-reduced-motion:reduce){.camera-flash{animation:none!important}}
+
+/* A small bounce from the dolls just after the camera flashes. */
+.hero-dolls{position:absolute;inset:0;z-index:1;pointer-events:none;background-image:url("https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-03_01_35-PM.png");background-position:center;background-size:cover;clip-path:polygon(67% 35%,70% 30%,73% 32%,75% 39%,78% 37%,81% 39%,83% 48%,83% 70%,66% 70%,66% 48%);animation:dollsBounce 5s ease-in-out infinite}
+@keyframes dollsBounce{0%,63%,77%,100%{transform:translateY(0)}67%,73%{transform:translateY(-6px)}70%{transform:translateY(0)}}
+@media(max-width:699px){.hero-dolls{background-image:url("hero-mobile.jpg");background-size:100% 100%;clip-path:polygon(41% 42%,43% 37%,48% 35%,53% 37%,56% 42%,60% 38%,66% 37%,72% 42%,72% 57%,41% 57%)}}
+@media(prefers-reduced-motion:reduce){.hero-dolls{animation:none!important}}
