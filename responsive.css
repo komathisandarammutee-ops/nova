@@ -10,3 +10,10 @@
 .category img,.promo img,.product img,.feature img{transition:transform .25s ease,box-shadow .25s ease}
 @media(hover:hover){.category:hover img,.promo:hover img,.product:hover img,.feature:hover img{transform:translateY(-4px) scale(1.015);box-shadow:0 10px 22px rgba(0,0,0,.10)}}
 @media(prefers-reduced-motion:reduce){.hero>picture img,.promo img,.feature img{animation:none!important}.category img,.promo img,.product img,.feature img{transition:none!important}}
+
+/* Camera flash in the hero artwork */
+.hero>picture{position:relative;overflow:hidden}
+.hero>picture::after{content:"";position:absolute;left:55%;top:56%;width:90px;height:90px;transform:translate(-50%,-50%) scale(.2);border-radius:50%;pointer-events:none;opacity:0;background:radial-gradient(circle,#fff 0%,rgba(255,255,255,.98) 13%,rgba(255,255,255,.7) 30%,rgba(255,255,255,0) 72%);filter:drop-shadow(0 0 22px #fff);animation:cameraFlash 7s infinite}
+@keyframes cameraFlash{0%,71%,73%,74%,76%,100%{opacity:0;transform:translate(-50%,-50%) scale(.2)}72%,75%{opacity:1;transform:translate(-50%,-50%) scale(1.35)}}
+@media(max-width:699px){.hero>picture::after{left:61%;top:65%;width:76px;height:76px}}
+@media(prefers-reduced-motion:reduce){.hero>picture::after{animation:none!important}}
