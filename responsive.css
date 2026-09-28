@@ -1367,3 +1367,112 @@ body.single-product h1.wp-block-post-title {
   .nova-fullwidth-wrap > .gt-hero-banner.featured-banner{padding-left:16px!important;padding-right:16px!important}
   .category-intro-text h3{font-size:31px!important}
 }
+
+
+/* =========================================================
+   DESKTOP HEADER POLISH — 2026-09-28
+   Cleaner balance while preserving the existing Nova look.
+   ========================================================= */
+@media (min-width:1201px){
+  .gt-site-header{
+    background:#f8e8d8!important;
+  }
+
+  .gt-header-top{
+    min-height:112px!important;
+    padding:0 42px!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+
+  .gt-header-top > .wp-block-columns{
+    width:100%!important;
+    max-width:1500px!important;
+    margin:0 auto!important;
+    display:grid!important;
+    grid-template-columns:28% 44% 28%!important;
+    column-gap:24px!important;
+    align-items:center!important;
+  }
+
+  .gt-header-top > .wp-block-columns > .wp-block-column{
+    width:auto!important;
+    min-width:0!important;
+  }
+
+  .wp-clone-logo{
+    justify-content:flex-start!important;
+    margin:0!important;
+  }
+
+  .wp-clone-title{
+    font-size:30px!important;
+    line-height:1.05!important;
+    letter-spacing:-.25px!important;
+    color:#111!important;
+  }
+
+  .header-search-box{
+    display:flex!important;
+    justify-content:center!important;
+  }
+
+  .header-search-box .wp-block-search{
+    width:100%!important;
+    max-width:590px!important;
+  }
+
+  .header-search-box .wp-block-search__inside-wrapper{
+    width:100%!important;
+    height:50px!important;
+    min-height:50px!important;
+    border-radius:999px!important;
+    box-shadow:0 2px 8px rgba(0,0,0,.045)!important;
+  }
+
+  .header-search-box .wp-block-search__input{
+    height:50px!important;
+    padding:0 21px!important;
+    font-size:15px!important;
+    line-height:50px!important;
+  }
+
+  .header-search-box .wp-block-search__button{
+    height:50px!important;
+    min-width:105px!important;
+    padding:0 22px!important;
+    font-size:15px!important;
+    line-height:50px!important;
+  }
+
+  .header-icons{
+    display:flex!important;
+    justify-content:flex-end!important;
+  }
+
+  .wp-clone-actions{
+    justify-content:flex-end!important;
+    gap:24px!important;
+    width:100%!important;
+  }
+
+  .wp-clone-account,
+  .wp-clone-cart{
+    font-size:17px!important;
+    line-height:1!important;
+    font-weight:500!important;
+  }
+
+  .wp-clone-account{
+    color:#222!important;
+  }
+
+  .wp-clone-cart{
+    color:#111!important;
+  }
+
+  .wp-clone-account:hover,
+  .wp-clone-cart:hover{
+    opacity:.65;
+  }
+}
