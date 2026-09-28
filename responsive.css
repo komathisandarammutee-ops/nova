@@ -80,3 +80,66 @@ body{font-family:"NovaInter",Inter,Arial,sans-serif}
     background:#fff;
   }
 }
+
+
+/* Pixel-match pass based on current WordPress desktop reference */
+@media(min-width:1101px){
+  .site-header{height:120px;overflow:hidden}
+  .header-row{
+    height:120px;
+    min-height:120px;
+    padding:0 28px;
+    grid-template-columns:22% 48% 30%;
+    align-items:center;
+    gap:18px;
+  }
+  .site-title{
+    font-size:31px;
+    line-height:1;
+    overflow:visible;
+  }
+  .header-search{
+    width:552px;
+    height:56px;
+    max-width:552px;
+  }
+  .header-search input{
+    height:56px!important;
+    min-height:56px!important;
+    padding:0 20px!important;
+    border-radius:999px 0 0 999px!important;
+    font-size:17px!important;
+    line-height:56px!important;
+  }
+  .header-search button{
+    height:56px!important;
+    min-height:56px!important;
+    padding:0 24px!important;
+    border-radius:0 999px 999px 0!important;
+    font-size:17px!important;
+    line-height:56px!important;
+  }
+  .header-actions{
+    justify-content:flex-end;
+    gap:28px;
+    font-size:20px;
+  }
+  .account{color:#fff!important}
+  .cart{color:#111!important}
+  .hero{
+    padding:10px 16px 0!important;
+    background:#fff!important;
+  }
+  .hero img{
+    width:100%!important;
+    height:auto!important;
+    display:block!important;
+  }
+  .hero-shop{
+    left:7%!important;
+    top:63%!important;
+    padding:14px 50px!important;
+    font-size:18px!important;
+    border-radius:4px!important;
+  }
+}
