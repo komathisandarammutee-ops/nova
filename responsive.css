@@ -1032,3 +1032,338 @@ body.single-product h1.wp-block-post-title {
     animation:none!important;
   }
 }
+
+
+/* =========================================================
+   WORDPRESS MOBILE CLONE PASS — 2026-09-28
+   Reference: current Nova Experientia mobile homepage
+   Keeps desktop styling untouched.
+   ========================================================= */
+@media (max-width: 767px){
+
+  html, body{
+    width:100%;
+    overflow-x:hidden!important;
+    background:#fff;
+  }
+
+  /* HEADER — match WordPress mobile stack */
+  .gt-site-header{
+    background:#f8e8d8!important;
+  }
+
+  .gt-header-top{
+    padding:18px 20px 26px!important;
+  }
+
+  .gt-header-top > .wp-block-columns{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    gap:0!important;
+  }
+
+  .gt-header-top > .wp-block-columns > .wp-block-column{
+    width:100%!important;
+    flex-basis:auto!important;
+    margin:0!important;
+  }
+
+  .wp-clone-logo{
+    justify-content:center!important;
+    margin:0 0 18px!important;
+  }
+
+  .wp-clone-title{
+    font-family:"NovaMerriweather",Merriweather,Georgia,serif!important;
+    font-size:27px!important;
+    line-height:1.05!important;
+    font-weight:700!important;
+    letter-spacing:-.45px!important;
+    text-align:center!important;
+    white-space:nowrap!important;
+  }
+
+  /* Search pill — WordPress mobile appearance */
+  .header-search-box{
+    margin:0 0 22px!important;
+  }
+
+  .header-search-box .wp-block-search{
+    width:100%!important;
+  }
+
+  .header-search-box .wp-block-search__inside-wrapper{
+    width:100%!important;
+    height:48px!important;
+    min-height:48px!important;
+    border:0!important;
+    border-radius:30px!important;
+    overflow:hidden!important;
+    background:#fff!important;
+    box-shadow:0 1px 2px rgba(0,0,0,.04)!important;
+  }
+
+  .header-search-box .wp-block-search__input{
+    width:100%!important;
+    min-width:0!important;
+    height:48px!important;
+    padding:0 16px!important;
+    border:0!important;
+    border-radius:30px!important;
+    font-size:16px!important;
+    line-height:48px!important;
+    color:#6e6e6e!important;
+    background:#fff!important;
+  }
+
+  .header-search-box .wp-block-search__input::placeholder{
+    color:#6e6e6e!important;
+    opacity:1!important;
+  }
+
+  .header-search-box .wp-block-search__button{
+    display:none!important;
+  }
+
+  /* Account / cart row */
+  .header-icons{
+    width:100%!important;
+  }
+
+  .wp-clone-actions{
+    width:100%!important;
+    display:flex!important;
+    justify-content:space-between!important;
+    align-items:center!important;
+    gap:14px!important;
+    min-height:48px!important;
+    padding:0 2px!important;
+  }
+
+  .wp-clone-account{
+    color:#fff!important;
+    font-size:18px!important;
+    font-weight:500!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+  }
+
+  .wp-clone-cart{
+    color:#111!important;
+    font-size:18px!important;
+    font-weight:500!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+  }
+
+  .wp-clone-cart strong{
+    font-weight:500!important;
+  }
+
+  /* HERO — same inset width and overlapping white CTA */
+  .nova-fullwidth-wrap > .gt-hero-banner.featured-banner{
+    width:100%!important;
+    max-width:100%!important;
+    left:auto!important;
+    transform:none!important;
+    margin:0!important;
+    padding:16px 18px 0!important;
+    overflow:visible!important;
+    background:#fff!important;
+  }
+
+  .nova-fullwidth-wrap > .gt-hero-banner.featured-banner .gt-hero-inner{
+    margin:0!important;
+    padding:0!important;
+    background:#fff!important;
+  }
+
+  .nova-fullwidth-wrap > .gt-hero-banner.featured-banner figure{
+    width:100%!important;
+    aspect-ratio:2.80 / 1!important;
+    overflow:hidden!important;
+  }
+
+  .nova-fullwidth-wrap > .gt-hero-banner.featured-banner img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+    object-position:center center!important;
+  }
+
+  .gt-hero-banner .nova-hero-shop-button{
+    left:50%!important;
+    top:auto!important;
+    bottom:-15px!important;
+    transform:translateX(-50%)!important;
+    width:auto!important;
+    margin:0!important;
+  }
+
+  .nova-hero-shop-button .wp-block-button__link{
+    min-width:180px!important;
+    padding:14px 28px!important;
+    border-radius:5px!important;
+    font-size:17px!important;
+    line-height:1.2!important;
+    font-weight:700!important;
+    box-shadow:0 5px 13px rgba(0,0,0,.08)!important;
+  }
+
+  /* CATEGORY / SLOGAN — WordPress screenshot alignment */
+  .category-icons{
+    width:100%!important;
+    margin:0!important;
+    padding:61px 0 28px!important;
+    background:#fff!important;
+  }
+
+  .category-icons > .wp-block-columns{
+    display:block!important;
+    width:100%!important;
+    margin:0!important;
+  }
+
+  .category-intro-text{
+    width:100%!important;
+    margin:0!important;
+    padding:0 2px 20px!important;
+  }
+
+  .category-intro-text h3{
+    margin:0!important;
+    padding:0!important;
+    font-family:"NovaInter",Inter,Arial,sans-serif!important;
+    font-size:33px!important;
+    line-height:1.20!important;
+    font-weight:400!important;
+    letter-spacing:.2px!important;
+    text-align:left!important;
+  }
+
+  .category-products{
+    padding:0 18px!important;
+  }
+
+  .category-products > .wp-block-columns{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:22px 12px!important;
+  }
+
+  .category-products .wp-block-image,
+  .category-products .wp-block-image img,
+  .category-products img{
+    width:90px!important;
+    height:90px!important;
+    min-width:90px!important;
+    max-width:90px!important;
+  }
+
+  .category-products p{
+    margin-top:7px!important;
+    font-size:14px!important;
+    line-height:1.25!important;
+  }
+
+  /* Remaining homepage sections: same narrow WordPress rhythm */
+  .promo-section{
+    padding:26px 16px 50px!important;
+  }
+
+  .promo-grid{
+    grid-template-columns:1fr!important;
+    gap:18px!important;
+  }
+
+  .promo{
+    padding:18px!important;
+    border-radius:12px!important;
+  }
+
+  .promo h3{
+    font-size:24px!important;
+  }
+
+  .promo p{
+    font-size:17px!important;
+    min-height:0!important;
+  }
+
+  .promo img{
+    width:100%!important;
+    height:auto!important;
+  }
+
+  .shop-link{
+    font-size:20px!important;
+  }
+
+  .products-section,
+  .trending-section{
+    width:100%!important;
+    margin:0!important;
+    padding:34px 16px!important;
+  }
+
+  .products-section h2,
+  .trending-section h2{
+    font-size:30px!important;
+    margin-bottom:20px!important;
+  }
+
+  .product-row,
+  .product-row.one{
+    grid-template-columns:1fr!important;
+    gap:24px!important;
+  }
+
+  .product-card h3{
+    font-size:21px!important;
+  }
+
+  .amotion{
+    grid-template-columns:1fr!important;
+    gap:24px!important;
+    padding:42px 18px!important;
+  }
+
+  .amotion-kicker{
+    font-size:29px!important;
+  }
+
+  .amotion-sub{
+    font-size:22px!important;
+  }
+
+  .amotion h2{
+    font-size:22px!important;
+  }
+
+  .partners{
+    padding:18px 16px 55px!important;
+  }
+
+  .partners h2{
+    font-size:25px!important;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr!important;
+    padding:38px 18px!important;
+  }
+
+  .footer-grid > div{
+    padding:0!important;
+  }
+}
+
+/* Slightly tighter phones */
+@media (max-width: 390px){
+  .gt-header-top{padding-left:16px!important;padding-right:16px!important}
+  .wp-clone-title{font-size:25px!important}
+  .wp-clone-account,.wp-clone-cart{font-size:17px!important}
+  .nova-fullwidth-wrap > .gt-hero-banner.featured-banner{padding-left:16px!important;padding-right:16px!important}
+  .category-intro-text h3{font-size:31px!important}
+}
