@@ -143,3 +143,749 @@ body{font-family:"NovaInter",Inter,Arial,sans-serif}
     border-radius:4px!important;
   }
 }
+
+
+/* === ACTUAL WORDPRESS CUSTOM STYLES === */
+/* Allow the hero to extend outside the theme container */
+.nova-fullwidth-wrap {
+    overflow: visible !important;
+}
+
+/* Make ONLY the homepage banner almost full screen */
+.nova-fullwidth-wrap > .gt-hero-banner.featured-banner {
+    width: calc(100vw - 24px) !important;
+    max-width: none !important;
+
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+}
+
+/* Make everything inside the banner fill it */
+.nova-fullwidth-wrap > .gt-hero-banner.featured-banner .wp-block-columns,
+.nova-fullwidth-wrap > .gt-hero-banner.featured-banner .wp-block-column,
+.nova-fullwidth-wrap > .gt-hero-banner.featured-banner figure,
+.nova-fullwidth-wrap > .gt-hero-banner.featured-banner .wp-block-image {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Banner image */
+.nova-fullwidth-wrap > .gt-hero-banner.featured-banner img {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+}
+
+/* Prevent horizontal scrollbar */
+html,
+body {
+    overflow-x: clip;
+}
+
+/* ========================================
+/* SHOP NOW BUTTON ON HERO */
+
+.gt-hero-banner.featured-banner {
+    position: relative !important;
+}
+
+.gt-hero-banner .nova-hero-shop-button {
+    position: absolute !important;
+    left: 7% !important;
+    top: 63% !important;
+    z-index: 50 !important;
+    margin: 0 !important;
+}
+
+/* SHOP NOW DESIGN */
+.nova-hero-shop-button .wp-block-button__link {
+    background: #ffffff !important;
+    color: #111111 !important;
+
+    min-width: 210px !important;
+    padding: 18px 38px !important;
+
+    border-radius: 5px !important;
+    border: none !important;
+
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+
+    text-align: center !important;
+    text-decoration: none !important;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08) !important;
+}
+/* =====================================
+/* ==========================================
+/* ==========================================
+   NOVA CATEGORY SECTION – FINAL
+   ========================================== */
+
+.category-icons {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    /* top | right | bottom | left */
+    padding: 32px 28px 35px 55px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ==========================================
+   LEFT INTRO / SLOGAN
+   ========================================== */
+
+.category-intro-text {
+    padding-right: 30px !important;
+
+    /* MOVE SLOGAN A LITTLE MORE TO THE RIGHT */
+    padding-left: 125px !important;
+
+    box-sizing: border-box !important;
+}
+
+.category-intro-text h3 {
+    font-size: 29px !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    letter-spacing: 0 !important;
+}
+
+
+/* ==========================================
+   PRODUCT AREA
+   ========================================== */
+
+.category-products {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+
+/* Keep all 6 products in one row */
+
+.category-products > .wp-block-columns {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    gap: 20px !important;
+
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+}
+
+
+/* ==========================================
+   EACH PRODUCT
+   ========================================== */
+
+.category-products > .wp-block-columns > .wp-block-column {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    text-align: center !important;
+}
+
+
+/* ==========================================
+   PRODUCT STACK
+   ========================================== */
+
+.category-products .wp-block-stack {
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 8px !important;
+}
+
+
+/* ==========================================
+   LARGE CATEGORY IMAGES
+   ========================================== */
+
+.category-products .wp-block-image {
+    width: 160px !important;
+    height: 160px !important;
+    max-width: 160px !important;
+
+    margin: 0 auto !important;
+}
+
+.category-products .wp-block-image img,
+.category-products img {
+    width: 160px !important;
+    height: 160px !important;
+
+    min-width: 160px !important;
+    max-width: 160px !important;
+
+    object-fit: cover !important;
+
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1200px) {
+
+    .category-icons {
+        padding-left: 40px !important;
+        padding-right: 25px !important;
+    }
+
+    .category-intro-text {
+        padding-left: 55px !important;
+    }
+
+    .category-intro-text h3 {
+        font-size: 25px !important;
+    }
+
+    .category-products > .wp-block-columns {
+        gap: 12px !important;
+    }
+
+    .category-products .wp-block-image,
+    .category-products .wp-block-image img,
+    .category-products img {
+        width: 120px !important;
+        height: 120px !important;
+
+        min-width: 120px !important;
+        max-width: 120px !important;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 767px) {
+
+    .category-icons {
+        padding: 25px 18px 30px !important;
+    }
+
+    .category-intro-text {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 25px !important;
+    }
+
+    .category-intro-text h3 {
+        font-size: 23px !important;
+        line-height: 1.3 !important;
+        text-align: center !important;
+    }
+
+    .category-products > .wp-block-columns {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 25px 12px !important;
+    }
+
+    .category-products .wp-block-image,
+    .category-products .wp-block-image img,
+    .category-products img {
+        width: 90px !important;
+        height: 90px !important;
+
+        min-width: 90px !important;
+        max-width: 90px !important;
+    }
+}
+/* ==========================================
+   /* ==========================================
+   /* ==========================================
+   /* ==========================================
+   NOVA PROMO CARDS – FULL WIDTH
+   FONT SIZE CONTROLLED BY WORDPRESS TOOLBAR
+   ========================================== */
+
+
+/* ==========================================
+   WHOLE PROMO CARDS SECTION
+   ========================================== */
+
+.gt-promo-cards {
+    width: 100% !important;
+    max-width: none !important;
+
+    /* Gap after category icons */
+    margin-top: 55px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    padding-top: 0 !important;
+    padding-bottom: 35px !important;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ==========================================
+   MAIN 4-CARD ROW
+   ========================================== */
+
+.gt-promo-cards > .wp-block-columns {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    gap: 24px !important;
+
+    justify-content: space-between !important;
+    align-items: stretch !important;
+}
+
+
+/* ==========================================
+   EACH CARD
+   ========================================== */
+
+.gt-promo-cards > .wp-block-columns > .wp-block-column {
+    flex: 1 1 0 !important;
+
+    width: 25% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    padding: 22px !important;
+
+    box-sizing: border-box !important;
+
+    border-radius: 14px !important;
+}
+
+
+/* ==========================================
+   CARD HEADINGS
+   NO FONT SIZE HERE
+   ========================================== */
+
+.gt-promo-cards h4 {
+    line-height: 1.25;
+    font-weight: 700;
+
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+}
+
+
+/* ==========================================
+   DESCRIPTION
+   NO FONT SIZE HERE
+   ========================================== */
+
+.gt-promo-cards p {
+    line-height: 1.5;
+
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+}
+
+
+/* ==========================================
+   IMAGE CONTAINER
+   ========================================== */
+
+.gt-promo-cards .wp-block-image {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin-top: 16px !important;
+    margin-right: 0 !important;
+    margin-bottom: 14px !important;
+    margin-left: 0 !important;
+}
+
+
+/* ==========================================
+   BIG WIDE CARD IMAGES
+   ========================================== */
+
+.gt-promo-cards .wp-block-image img {
+    width: 100% !important;
+    max-width: none !important;
+
+    height: 260px !important;
+
+    object-fit: cover !important;
+
+    display: block !important;
+
+    border-radius: 10px !important;
+}
+
+
+/* ==========================================
+   SHOP NOW
+   NO FONT SIZE HERE
+   ========================================== */
+
+.gt-promo-cards a {
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   LARGE DESKTOP
+   ========================================== */
+
+@media (min-width: 1600px) {
+
+    .gt-promo-cards {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+
+    .gt-promo-cards > .wp-block-columns {
+        gap: 28px !important;
+    }
+
+    .gt-promo-cards .wp-block-image img {
+        height: 280px !important;
+    }
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1200px) {
+
+    .gt-promo-cards {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+
+        margin-top: 40px !important;
+    }
+
+    .gt-promo-cards > .wp-block-columns {
+        flex-wrap: wrap !important;
+    }
+
+    .gt-promo-cards > .wp-block-columns > .wp-block-column {
+        flex: 0 0 calc(50% - 12px) !important;
+
+        width: calc(50% - 12px) !important;
+    }
+
+    .gt-promo-cards .wp-block-image img {
+        height: 240px !important;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 767px) {
+
+    .gt-promo-cards {
+        width: 100% !important;
+
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+
+        margin-top: 30px !important;
+    }
+
+    .gt-promo-cards > .wp-block-columns {
+        display: block !important;
+    }
+
+    .gt-promo-cards > .wp-block-columns > .wp-block-column {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-bottom: 20px !important;
+    }
+
+    .gt-promo-cards .wp-block-image img {
+        height: 220px !important;
+    }
+}
+/* ==========================================
+/* ==========================================
+   NEW ARRIVAL SECTION
+   ========================================== */
+
+/* Main New Arrival column */
+.new-arrivals {
+    width: 100% !important;
+    max-width: 1600px !important;
+
+    position: relative !important;
+    left: -470px !important;
+
+    margin-top: 45px !important;
+    margin-bottom: 45px !important;
+
+    padding: 0 !important;
+}
+
+
+/* ==========================================
+   PRODUCT AREA
+   ========================================== */
+
+.new-arrivals .wc-block-product-template,
+.new-arrivals .products-block-post-template {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    justify-content: flex-start !important;
+}
+
+
+/* Individual product */
+.new-arrivals .wc-block-product {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+
+/* ==========================================
+   PRODUCT IMAGE
+   ========================================== */
+
+.new-arrivals .wc-block-components-product-image {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+/* Keep image responsive */
+.new-arrivals .wc-block-components-product-image img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+
+/* ==========================================
+   PRODUCT TITLE / PRICE / BUTTON ALIGNMENT
+   Do NOT control typography here.
+   You can change font from WordPress toolbar.
+   ========================================== */
+
+.new-arrivals .wp-block-post-title,
+.new-arrivals .wc-block-components-product-name,
+.new-arrivals .wc-block-components-product-price,
+.new-arrivals .wp-block-button {
+    margin-left: 0 !important;
+}
+
+
+/* ==========================================
+   REMOVE UNWANTED PAGINATION
+   ========================================== */
+
+.new-arrivals .wp-block-query-pagination {
+    display: none !important;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1200px) {
+
+    .new-arrivals {
+        left: -180px !important;
+        width: 100% !important;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 767px) {
+
+    .new-arrivals {
+        left: 0 !important;
+        width: 100% !important;
+
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+
+}
+/* ==========================================
+   /* ==========================================
+   TRENDING NOW – PRODUCT TITLES
+   ========================================== */
+
+.nova-trending .wp-block-post-title,
+.nova-trending .wc-block-components-product-name,
+.nova-trending .wc-block-grid__product-title,
+.nova-trending .wp-block-woocommerce-product-template .wp-block-post-title {
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+}
+/* ==========================================
+================================
+/* ==========================================
+  /* ==========================================
+  /* ==========================================
+   NOVA CUSTOMER MOVING TICKER
+   ========================================== */
+
+.nova-customer-ticker {
+    flex-wrap: nowrap !important;
+    width: max-content !important;
+    min-width: 100% !important;
+    animation: novaCustomerMove 15s linear infinite;
+}
+
+.nova-customer-ticker > .wp-block-column {
+    flex: 0 0 auto !important;
+    min-width: 190px !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+}
+
+@keyframes novaCustomerMove {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-70%);
+    }
+}
+/* SINGLE PRODUCT TITLE - FINAL */
+body.single-product h1.wp-block-post-title {
+    font-size: 48px !important;
+    line-height: 1.15 !important;
+    font-weight: 600 !important;
+}
+/* ==========================================
+  /* ==========================================
+   OUT OF STOCK BADGE
+   ========================================== */
+
+.single-product .stock.out-of-stock,
+.single-product p.stock.out-of-stock,
+.woocommerce div.product .stock.out-of-stock {
+    display: inline-block !important;
+
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+
+    color: #111111 !important;
+    background: #f8e8d8 !important;
+
+    padding: 14px 28px !important;
+    border-radius: 50px !important;
+
+    margin-top: 10px !important;
+    margin-bottom: 24px !important;
+
+    letter-spacing: 0.3px !important;
+}
+
+/* === STATIC GITHUB BLOCK REPLACEMENTS === */
+
+/* GitHub static equivalents for dynamic WordPress header blocks */
+.wp-clone-logo{display:flex;align-items:center;gap:12px}
+.wp-clone-title{
+  font-family:"NovaMerriweather",Merriweather,serif;
+  font-size:33px;
+  font-weight:700;
+  line-height:1.2;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.gt-header-top .wp-block-columns{margin:0;align-items:center}
+.header-search-box .wp-block-search{margin:0}
+.header-search-box .wp-block-search__inside-wrapper{
+  display:flex;
+  align-items:center;
+  width:552px;
+  max-width:100%;
+  min-height:56px;
+  border:0!important;
+  border-radius:999px!important;
+  padding:0!important;
+  overflow:hidden;
+  background:#fff;
+}
+.header-search-box .wp-block-search__input{
+  flex:1;
+  height:56px;
+  border:0!important;
+  outline:0!important;
+  padding:0 20px!important;
+  font-size:17px;
+  background:#fff;
+}
+.header-search-box .wp-block-search__button{
+  margin:0!important;
+  height:56px;
+  min-width:118px;
+  border:0!important;
+  border-radius:0!important;
+  background:#111!important;
+  color:#fff!important;
+  font-size:17px;
+  font-weight:700;
+}
+.wp-clone-actions{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+}
+.wp-clone-account{color:#fff;font-size:22px;font-weight:500;white-space:nowrap}
+.wp-clone-cart{color:#111;font-size:22px;font-weight:600;white-space:nowrap}
+.category-icons{background:#fff}
+.category-products p{font-size:22px;font-weight:400;text-align:center;margin:8px 0 0}
+.category-intro-text h3{font-size:29px!important;font-weight:700!important}
+@media(max-width:1200px){
+  .wp-clone-title{font-size:27px}
+  .wp-clone-account,.wp-clone-cart{font-size:18px}
+  .header-search-box .wp-block-search__inside-wrapper{width:100%}
+}
+
