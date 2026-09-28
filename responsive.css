@@ -889,3 +889,88 @@ body.single-product h1.wp-block-post-title {
   .header-search-box .wp-block-search__inside-wrapper{width:100%}
 }
 
+
+
+/* ==========================================
+   PINK CAMERA FLASH - DESKTOP TEST
+   GitHub preview only
+   ========================================== */
+.hero-artwork{
+  position:relative!important;
+  overflow:hidden;
+}
+
+.pink-camera-flash{
+  display:none;
+}
+
+@media (min-width:1201px){
+  .pink-camera-flash{
+    display:block;
+    position:absolute;
+    z-index:20;
+    left:52.1%;
+    top:44.5%;
+    width:110px;
+    height:110px;
+    transform:translate(-50%,-50%) scale(.18);
+    border-radius:50%;
+    pointer-events:none;
+    opacity:0;
+    background:
+      radial-gradient(circle,
+        rgba(255,255,255,1) 0 8%,
+        rgba(255,255,255,.98) 9% 16%,
+        rgba(255,240,247,.92) 17% 29%,
+        rgba(255,189,216,.58) 30% 45%,
+        rgba(255,143,190,.18) 46% 62%,
+        transparent 72%);
+    filter:drop-shadow(0 0 10px rgba(255,255,255,.95))
+           drop-shadow(0 0 24px rgba(255,164,201,.75));
+    animation:novaPinkCameraFlash 5.2s ease-in-out infinite;
+  }
+
+  .pink-camera-flash::before,
+  .pink-camera-flash::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
+    background:rgba(255,255,255,.9);
+    transform:translate(-50%,-50%);
+    border-radius:999px;
+  }
+
+  .pink-camera-flash::before{
+    width:150px;
+    height:3px;
+  }
+
+  .pink-camera-flash::after{
+    width:3px;
+    height:150px;
+  }
+}
+
+@keyframes novaPinkCameraFlash{
+  0%,62%,66%,100%{
+    opacity:0;
+    transform:translate(-50%,-50%) scale(.18);
+  }
+  63%{
+    opacity:.92;
+    transform:translate(-50%,-50%) scale(.75);
+  }
+  64%{
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1.18);
+  }
+  65%{
+    opacity:.25;
+    transform:translate(-50%,-50%) scale(.48);
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .pink-camera-flash{animation:none!important}
+}
