@@ -2,124 +2,135 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Nova Experientia — Mobile Prototype</title>
-<meta name="description" content="Nova Experientia — cameras, collectibles, automotive and lifestyle products.">
-<link rel="stylesheet" href="responsive.css?v=20260928-1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nova Experientia</title>
+<meta name="description" content="Nova Experientia">
+<link rel="stylesheet" href="responsive.css?v=wp-original-1">
 </head>
 <body>
-<header class="header">
-  <div class="shell topbar">
-    <a class="brand" href="#"><span class="mark">NE</span><span>NOVA EXPERIENTIA</span></a>
-    <div class="actions">
-      <button id="searchBtn" class="mobile-only" aria-label="Search">⌕</button>
-      <button class="account-btn" aria-label="Account"><span class="mobile-only">◯</span><span class="desktop-only">◉ My Account⌄</span></button>
-      <button class="cart-btn" aria-label="Cart"><span class="mobile-only">Bag</span><span class="desktop-only">🛒 RM0.00</span></button>
-      <button id="menuBtn" class="mobile-only" aria-label="Menu" aria-expanded="false">☰</button>
+
+<header class="site-header">
+  <div class="header-row">
+    <a class="site-title" href="https://novaexperientia.com/">NOVA EXPERIENTIA</a>
+
+    <form class="header-search" action="https://novaexperientia.com/" method="get">
+      <input type="search" name="s" placeholder="Search for products, brands and more">
+      <input type="hidden" name="post_type" value="product">
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="header-actions">
+      <a href="https://novaexperientia.com/my-account/" class="account">◉ My Account⌄</a>
+      <a href="https://novaexperientia.com/cart/" class="cart">🛒 <span>RM0.00</span></a>
     </div>
   </div>
-  <div class="shell search" id="search" hidden><input type="search" placeholder="Search for products, brands and more"><button type="button">Search</button></div>
-  <nav class="mobile-nav" id="nav" hidden>
-    <a href="#categories">Shop</a><a href="#blindbox">Blind Box</a><a href="#automotive">Automotive</a>
-    <a href="#amotion">A Motion</a><a href="#partners">Partners</a><a href="#contact">Contact</a>
-  </nav>
 </header>
 
 <main>
-<section class="hero">
-  <div class="hero-image">
-    <picture>
-      <source media="(max-width: 699px)" srcset="hero-mobile.jpg">
-      <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-03_01_35-PM.png" alt="Nova Experientia cameras, collectibles and automotive products">
-    </picture>
-    <span class="hero-dolls" aria-hidden="true"></span>
-    <span class="doll-sparkles" aria-hidden="true">✦</span>
-    <span class="camera-flash" aria-hidden="true"></span>
-  </div>
-  <div class="shell hero-wrap">
-    <div class="hero-card">
-      <p class="eyebrow">NOVA EXPERIENTIA</p>
-      <h1>Bringing New Experiences to Consumers</h1>
-      <p>Cameras • Collectibles • Automotive • Lifestyle</p>
-      <a class="btn dark" href="#categories">Shop & Discover</a>
+  <section class="hero">
+    <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-10-2026-03_01_35-PM.png" alt="">
+    <a class="hero-shop" href="https://novaexperientia.com/?post_type=product">SHOP NOW</a>
+  </section>
+
+  <section class="categories">
+    <div class="category-intro">
+      <h2>New Ideas.<br>Unique Products.<br>One New Experience.</h2>
     </div>
-  </div>
-</section>
+    <div class="category-grid">
+      <div class="category"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-03_41_05-PM-1.png" alt=""><p>Disposable Camera</p></div>
+      <div class="category"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_05_29-PM.png" alt=""><p>Film</p></div>
+      <div class="category"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_24_26-PM.png" alt=""><p>Blind Box</p></div>
+      <div class="category"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_26_56-PM.png" alt=""><p>Jump Starter</p></div>
+      <div class="category"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_33_09-PM.png" alt=""><p>BSD</p></div>
+      <div class="category"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_34_00-PM.png" alt=""><p>Coming soon</p></div>
+    </div>
+  </section>
 
-<section class="section shell" id="categories">
-  <p class="eyebrow">DISCOVER</p>
-  <h2>New Ideas. Unique Products. One New Experience.</h2>
-  <div class="category-grid">
-    <a class="category" href="#"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-03_41_05-PM-1.png" alt="Disposable camera"><span>Disposable Camera</span></a>
-    <a class="category" href="#"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_05_29-PM.png" alt="Film"><span>Film</span></a>
-    <a class="category" href="#blindbox"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_24_26-PM.png" alt="Blind box"><span>Blind Box</span></a>
-    <a class="category" href="#automotive"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_26_56-PM.png" alt="Jump starter"><span>Jump Starter</span></a>
-    <a class="category" href="#automotive"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_33_09-PM.png" alt="Blind spot detection"><span>BSD</span></a>
-    <div class="category soon"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_34_00-PM.png" alt=""><span>Coming Soon</span></div>
-  </div>
-</section>
+  <section class="promo-section">
+    <div class="promo-grid">
+      <article class="promo">
+        <h3>Capture Every Moment</h3>
+        <p>Make Memories with Zero-waste Analogue Photography.</p>
+        <a href="https://novaexperientia.com/?product=fotofoto"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_46_12-PM.png" alt=""></a>
+        <a class="shop-link" href="https://novaexperientia.com/?product=fotofoto">Shop now →</a>
+      </article>
+      <article class="promo">
+        <h3>Create Your Collectible</h3>
+        <p>Turn original ideas into memorable blind Box Figures.</p>
+        <a href="https://novaexperientia.com/?product=blind-box-2"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_59_32-PM.png" alt=""></a>
+        <a class="shop-link" href="https://novaexperientia.com/?product=blind-box-2">Shop now →</a>
+      </article>
+      <article class="promo">
+        <h3>Safer Journeys</h3>
+        <p>Ready for anything the road throws at you.</p>
+        <a href="https://novaexperientia.com/?product_cat=automotive"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_49_26-PM.png" alt=""></a>
+        <a class="shop-link" href="https://novaexperientia.com/?product_cat=automotive">Shop now →</a>
+      </article>
+      <article class="promo">
+        <h3>Lifestyle</h3>
+        <p>Coming soon</p>
+        <img src="https://novaexperientia.com/wp-content/themes/gutentype-fse/assets/images/products/promo-pillow.jpg" alt="">
+        <a class="shop-link" href="#">Shop now →</a>
+      </article>
+    </div>
+  </section>
 
-<section class="section soft">
-<div class="shell promo-grid">
-  <article class="promo">
-    <p class="eyebrow">FOTOFOTO</p><h3>Capture Every Moment</h3>
-    <p>Make memories with zero-waste analogue photography.</p>
-    <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_46_12-PM.png" alt="FOTOFOTO camera">
-    <a class="link" href="https://novaexperientia.com/?product=fotofoto">Shop now →</a>
-  </article>
-  <article class="promo" id="blindbox">
-    <p class="eyebrow">CUSTOM COLLECTIBLES</p><h3>Create Your Own Collectible</h3>
-    <p>Turn your brand, character or idea into a custom blind-box collectible.</p>
-    <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_59_32-PM.png" alt="Custom blind box collectible">
-    <a class="link" href="https://novaexperientia.com/?product=blind-box-2">Discover more →</a>
-  </article>
-  <article class="promo" id="automotive">
-    <p class="eyebrow">AUTOMOTIVE</p><h3>Safer Journeys</h3>
-    <p>Technology and safety solutions designed for smarter, safer journeys.</p>
-    <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_49_26-PM.png" alt="Automotive products">
-    <a class="link" href="https://novaexperientia.com/?product_cat=automotive">Explore automotive →</a>
-  </article>
-  <article class="promo coming">
-    <p class="eyebrow">LIFESTYLE</p><h3>Something New Is Coming</h3>
-    <p>New lifestyle products are on the way.</p>
-    <div class="coming-art">COMING<br>SOON</div><span class="muted">Stay tuned</span>
-  </article>
-</div>
-</section>
+  <section class="products-section">
+    <h2>New Arrival</h2>
+    <div class="product-row one">
+      <article class="product-card">
+        <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-4-2026-12_51_14-PM.png" alt="">
+        <h3>A Motion 12V 3000A Portable Jump Starter</h3>
+        <a class="product-button" href="https://novaexperientia.com/?product=a-motion-jump-starter">View product</a>
+      </article>
+    </div>
+  </section>
 
-<section class="section shell">
-  <div class="section-row"><div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured Products</h2></div><a class="link" href="https://novaexperientia.com/?post_type=product">View all →</a></div>
-  <div class="product-grid">
-    <article class="product"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_46_12-PM.png" alt="FOTOFOTO camera"><h3>FOTOFOTO</h3><p>RM139.99</p><a class="btn outline" href="https://novaexperientia.com/?product=fotofoto">View product</a></article>
-    <article class="product"><img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-2-2026-04_49_26-PM.png" alt="Automotive product"><h3>A Motion Automotive</h3><p>Explore products</p><a class="btn outline" href="https://novaexperientia.com/?product_cat=automotive">View category</a></article>
-  </div>
-</section>
+  <section class="trending-section">
+    <h2>Trending Now</h2>
+    <div class="product-row">
+      <article class="product-card">
+        <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-23-2026-01_58_48-PM.png" alt="">
+        <h3>Blind Box</h3>
+        <a class="product-button" href="https://novaexperientia.com/?product=custom-blind-box">View product</a>
+      </article>
+      <article class="product-card">
+        <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-17-2026-05_19_23-PM.png" alt="">
+        <h3>FOTOFOTO-FF1</h3>
+        <a class="product-button" href="https://novaexperientia.com/?product=fotofoto-disposable-camera-malaysia">View product</a>
+      </article>
+    </div>
+  </section>
 
-<section class="section shell" id="amotion">
-  <div class="feature">
-    <div><p class="eyebrow">A MOTION</p><h2>Automotive Technology for Safer Journeys</h2><p>Explore A Motion automotive technology and safety solutions designed for smarter, safer journeys.</p><a class="btn dark" href="https://amotion.com.my/am/">Learn More</a></div>
-    <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-9-2026-04_10_46-PM.png" alt="A Motion automotive technology">
-  </div>
-</section>
+  <section class="amotion">
+    <div class="amotion-copy">
+      <p class="amotion-kicker">A MOTION</p>
+      <p class="amotion-sub">Get to Know A Motion</p>
+      <h2>Discover more about A Motion, our products, technology, and innovative automotive solutions.</h2>
+      <a href="https://amotion.com.my/am/" class="learn-btn">Learn More →</a>
+    </div>
+    <img src="https://novaexperientia.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-9-2026-04_10_46-PM.png" alt="">
+  </section>
 
-<section class="section shell" id="partners">
-  <p class="eyebrow">COLLABORATION</p><h2>Customers & Partners</h2>
-  <div class="ticker"><span>SUN & SKI SPORTS</span><span>URBAN OUTFITTERS</span><span>TOYOTA</span><span>PROTON</span><span>PERODUA</span><span>PHOTOLAB</span><span>DHL</span></div>
-  <p class="note">Prototype note: only show brands publicly where the relationship is confirmed and approved.</p>
-</section>
-
-<section class="cta" id="contact">
-  <div class="shell cta-inner"><div><p class="eyebrow">LET'S CREATE SOMETHING NEW</p><h2>Have a product, partnership or custom project in mind?</h2></div><a class="btn dark" href="mailto:enquiries@novaexperientia.com">Contact Us</a></div>
-</section>
+  <section class="partners">
+    <h2>OUR CUSTOMERS &amp; PARTNERS</h2>
+    <div class="partner-row">
+      <span>SUN &amp; SKI SPORTS</span><span>URBAN OUTFITTERS</span><span>TOYOTA</span><span>PROTON</span><span>PERODUA</span><span>PHOTOLAB</span><span>DHL</span>
+    </div>
+  </section>
 </main>
 
-<footer>
-<div class="shell footer-grid">
-  <div><div class="brand"><span class="mark">NE</span><span>NOVA EXPERIENTIA</span></div><p>Bringing new experiences to consumers.</p></div>
-  <div><h3>Shop</h3><a href="#">FOTOFOTO</a><a href="#">Blind Box</a><a href="#">Automotive</a></div>
-  <div><h3>Support</h3><a href="#">Shipping</a><a href="#">Refund & Returns</a><a href="#">Privacy Policy</a></div>
-  <div><h3>Contact</h3><a href="mailto:enquiries@novaexperientia.com">enquiries@novaexperientia.com</a><a href="tel:+60360915836">03-6091 5836</a></div>
-</div>
+<footer class="footer">
+  <div class="footer-grid">
+    <div><h2>NOVA EXPERIENTIA</h2></div>
+    <div><h3>Shopping</h3><a href="https://novaexperientia.com/?page_id=756">Shop All</a><a href="https://novaexperientia.com/?product=fotofoto-disposable-camera-malaysia">FotoFoto</a><a href="https://novaexperientia.com/?product=custom-blind-box">Blind Box</a></div>
+    <div><h3>Useful Links</h3><a href="https://novaexperientia.com/?page_id=108">Contact Us</a><a href="https://novaexperientia.com/?page_id=829">Shipping</a><a href="https://novaexperientia.com/?page_id=10">Refund &amp; Returns</a><a href="https://novaexperientia.com/?page_id=3">Privacy Policy</a></div>
+    <div><h3>Our Company</h3><a href="https://novaexperientia.com/?page_id=836">Nova Experientia</a><a href="https://amotion.com.my/am/">A Motion Brand</a></div>
+    <div><h3>Follow Us</h3><a href="https://www.instagram.com/novaexperientia/">Instagram</a><span>WhatsApp</span></div>
+    <div><h3>Contact</h3><p>📍 Lot 8, Jalan Industri 3/2,<br>Taman Industri Integrasi Rawang,<br>48000 Rawang, Selangor Darul Ehsan</p><p>☎ 03-6091 5836</p><p>✉ <a href="mailto:enquiries@novaexperientia.com">enquiries@novaexperientia.com</a></p></div>
+  </div>
+  <div class="copyright">© Copyright 2026 Gutentype. All Rights Reserved. Proudly powered by TemplateHouse</div>
 </footer>
-<script src="main.js?v=20260928-1"></script>
-</body></html>
+
+</body>
+</html>
