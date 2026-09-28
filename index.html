@@ -12,13 +12,13 @@
   <div class="shell topbar">
     <a class="brand" href="#"><span class="mark">NE</span><span>NOVA EXPERIENTIA</span></a>
     <div class="actions">
-      <button id="searchBtn" aria-label="Search">⌕</button>
-      <button aria-label="Account">◯</button>
-      <button aria-label="Cart">Bag</button>
-      <button id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+      <button id="searchBtn" class="mobile-only" aria-label="Search">⌕</button>
+      <button class="account-btn" aria-label="Account"><span class="mobile-only">◯</span><span class="desktop-only">◉ My Account⌄</span></button>
+      <button class="cart-btn" aria-label="Cart"><span class="mobile-only">Bag</span><span class="desktop-only">🛒 RM0.00</span></button>
+      <button id="menuBtn" class="mobile-only" aria-label="Menu" aria-expanded="false">☰</button>
     </div>
   </div>
-  <div class="shell search" id="search" hidden><input type="search" placeholder="Search products, brands and more"></div>
+  <div class="shell search" id="search" hidden><input type="search" placeholder="Search for products, brands and more"><button type="button">Search</button></div>
   <nav class="mobile-nav" id="nav" hidden>
     <a href="#categories">Shop</a><a href="#blindbox">Blind Box</a><a href="#automotive">Automotive</a>
     <a href="#amotion">A Motion</a><a href="#partners">Partners</a><a href="#contact">Contact</a>
